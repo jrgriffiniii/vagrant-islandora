@@ -1,0 +1,27 @@
+forge "http://forge.puppetlabs.com"
+
+mod 'example42/puppi'
+mod 'stahnma/epel'
+mod 'puppetlabs/java'
+mod 'puppetlabs/tomcat'
+mod 'puppetlabs/postgresql'
+mod 'puppetlabs/firewall'
+mod 'puppetlabs/apache'
+mod 'example42/php'
+mod 'erikwebb/drush'
+
+mod 'LafayetteCollegeLibraries/fedora_commons_solr',
+     :git => "https://github.com/LafayetteCollegeLibraries/puppet-fedora_commons_solr.git",
+     :ref => 'c5d5e2b9d93ad67853b271f982343def4a6567cb'
+
+mod "LafayetteCollegeLibraries/fedora_commons",
+    :git => "git@github.com:LafayetteCollegeLibraries/puppet-fedora_commons.git",
+    :ref => 'fcac17124f67b3b7b9314e024647d8b8f311d1b5'
+
+mod 'LafayetteCollegeLibraries/fedoragsearch',
+    :git => "https://github.com/LafayetteCollegeLibraries/puppet-fedoragsearch.git",
+    :ref => '2b0a90bdd078c42abb5eef995ffe169165f7bd70'
+
+mod 'LafayetteCollegeLibraries/islandora',
+    :git => "git@github.com:LafayetteCollegeLibraries/puppet-islandora.git",
+    :ref => 'c0e608bbbe0532eebc6cd170592f9829a6be521c'
