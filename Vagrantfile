@@ -76,7 +76,7 @@ Vagrant.configure(2) do |config|
     puppet.module_path = "puppet/modules"
     puppet.hiera_config_path = "puppet/hiera.yaml"
 
-    # puppet.options = "--verbose --debug"
+    puppet.options = "--verbose --debug"
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as
