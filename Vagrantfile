@@ -11,8 +11,7 @@ Vagrant.configure(2) do |config|
   # https://docs.vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "virtualbox/centos64"
-  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box"
+  config.vm.box = "jrgriffiniii/islandora"
 
   config.vm.hostname = "assets.localdomain"
 
@@ -63,21 +62,21 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  config.librarian_puppet.puppetfile_dir = "puppet"
+#  config.librarian_puppet.puppetfile_dir = "puppet"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
   # You will need to create the manifests directory and a manifest in
   # the file default.pp in the manifests_path directory.
   #
-  config.vm.provision "puppet" do |puppet|
+#  config.vm.provision "puppet" do |puppet|
 
-    puppet.manifests_path = "puppet/manifests"
-    puppet.module_path = "puppet/modules"
-    puppet.hiera_config_path = "puppet/hiera.yaml"
+#    puppet.manifests_path = "puppet/manifests"
+#    puppet.module_path = "puppet/modules"
+#    puppet.hiera_config_path = "puppet/hiera.yaml"
 
-    puppet.options = "--verbose --debug"
-  end
+#    puppet.options = "--verbose --debug"
+#  end
 
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
